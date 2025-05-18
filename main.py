@@ -82,7 +82,7 @@ def momentumupdater(momentum):
     y = 0
     for force in momentum.origin.forcelist:
         x += force.magnitude * math.sin(force.direction)
-		y += force.magnitude * math.cos(force.direction)
+        y += force.magnitude * math.cos(force.direction)
     momentum.direction = math.atan2(x, y)
     momentum.magnitude = math.sqrt(math.pow(x, 2) + math.pow(y, 2))
         
