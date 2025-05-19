@@ -96,7 +96,7 @@ if __name__ == '__main__':
     timer = 15
     timerticks = 15
     objlist = []
-    circle = PhysicObject(800, 400, 20, math.pi / 2, 30, (255, 255, 255, 255), windowbatch, objlist)
+    circle = PhysicObject(800, 400, 20, math.pi/2, 30, (255, 255, 255, 255), windowbatch, objlist)
     gravity = Force(circle, math.pi, 10, (255, 0, 0, 255), windowbatch, objlist, gravityupdater)
     pyglet.clock.schedule_interval(update, 1/60.0)
     pyglet.app.run()
